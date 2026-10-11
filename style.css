@@ -1,0 +1,15 @@
+@font-face { font-family: Hj; src: url(handjet-latin.woff2); font-weight: 100 900; unicode-range: U+0000-00FF, U+2000-206F; }
+@font-face { font-family: Hj; src: url(handjet-cyrillic.woff2); font-weight: 100 900; unicode-range: U+0400-045F; }
+@font-face { font-family: Ps; src: url(press-start-2p-latin.woff2); unicode-range: U+0000-00FF, U+2000-206F; }
+@font-face { font-family: Ps; src: url(press-start-2p-cyrillic.woff2); unicode-range: U+0400-045F; }
+:root { --bg: #7a7168; --paper: #efe2bd; --ink: #33242a; --mut: #6e5c4f; --acc: #8b1e1e; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: calc(24px + env(safe-area-inset-top)) 16px 48px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+header img { width: 72px; height: 72px; image-rendering: pixelated; }
+h1 { font-family: Ps; font-size: 22px; color: var(--paper); text-shadow: 3px 3px 0 var(--ink); margin: 0; line-height: 1.4; }
+article { background: var(--paper); border: 3px solid var(--ink); padding: 18px 20px 6px; margin-bottom: 18px; }
+h2 { font-family: Hj; font-weight: 700; font-size: 24px; margin: 18px 0 4px; }
+article > h2:first-child { margin-top: 0; }
+a { color: var(--acc); } .muted { color: var(--mut); font-size: 14px; }
